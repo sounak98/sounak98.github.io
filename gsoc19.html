@@ -19,216 +19,1462 @@
   </head>
   <body>
     <div class="content">
-      <h1>
-        Google Summer of Code 2019, with Python Software Foundation
-      </h1>
-      <hr />
-      <h2>
-        Python GSoC: Build a multi-user Blogging Platform with additional
-        features to manage GSoC@PSF
-      </h2>
-      <p class="size-2">
-        Sounak Pradhan <br />
-        Matthew Lagoe, John 'Warthog9' Hawley, James Lopeman (Mentors)
-      </p>
-      <p>
-        Every year more than 100 students apply for GSoC under the umbrella
-        organization PSF. Currently there is a multi-user blogging website using
-        WordPress CMS hosted for the students to publish their weekly blogs and
-        a static landing page for reaching out to people for more information
-        about this program. This project aims to build a platform which allows
-        smooth management of the GSoC program at PSF every year and also ties
-        everyone associated with it to PSF, so that their work or they
-        themselves can help out others in future.
-      </p>
-      <p>
-        <a
-          href="https://storage.googleapis.com/summerofcode-prod.appspot.com/gsoc/core_project/doc/5805244095660032_1554830317_proposal.pdf?Expires=1566499093&GoogleAccessId=summerofcode-prod%40appspot.gserviceaccount.com&Signature=eR3mDO1r5vcwzi15XfnFOFhHctwFSLKthDmOlIeh7gPUfxNY0xBtbxMmCGA%2Fy1UjiOGTX9jM2eV%2FdLaQr4PZQvHopjwd83yqKj9mnK4fPySxKEoRF9zVNA%2B1DITXfk%2Bd0DNprvB2oFPr80xwm%2Fm304fDNtFDYfX4UeAZ4HBprEsWM3K%2FjE6o1jOWS7WuelrLmL25fj5Ff6TeBu2%2BP0AwUT60YYrGODAuV5B2i05CeKsB1QiQx2TzP%2Br3vbilWmfDTUY23YRK1czDTlo8QOEvkiJLMKlFezn9TsilwXqjbDE0VX12R%2FgHVfO3lw2jr%2FULvSeVYpx%2BdHhSRKA7LeV1Yw%3D%3D"
-          target="_blank"
-          >Read the Full Proposal</a
+      <div
+        id="doc"
+        class="markdown-body container-fluid comment-enabled"
+        data-hard-breaks="true"
+      >
+        <h1 id="Google-Summer-of-Code-2019-with-Python-Software-Foundation">
+          Google Summer of Code 2019, with Python Software Foundation
+        </h1>
+        <hr />
+        <h2
+          id="Python-GSoC-Build-a-multi-user-Blogging-Platform-with-additional-features-to-manage-GSoCPSF"
         >
-      </p>
-      <hr />
-      <h2>Progress</h2>
-      <p>
-        We built the <a href="https://blogs.python-gsoc.org">blogs site</a> throughout the GSoC 2019 program. The application can currently do the following.
-        <ul>
-          <li>Allows users to apply for Suborgs by filling out the Suborg Application Form, which the admins can either accept or ask for changes.</li>
-          <li>Once a Suborg Application is accepted, add the Suborg in current system and also update the Ideas section in the <a href="https://python-gsoc.org">static site</a>.</li>
-          <li>Allows the admins to update the GSoC program timeline to the system and uploads the Schedule section in the static site.</li>
-          <li>Allows Suborg Admins to add mentors and students to their Suborg once the GSoC program is announced and students are selected.</li>
-          <li>Allows students to publish their weekly blog posts in their personal blogs.</li>
-          <li>Sends notifications (pending blog posts, acceptance of Suborg application, etc.) via emails based on roles if the user opts in for notifications via email.</li>
-          <li>Automatically generate paginated RSS feeds for all articles and also for student specific articles.</li>
-          <li>Once the current GSoC program ends, the system automatically archives the current static site and also deletes user details from the system in comlaince with GDPR.</li>
-        </ul>
-      </p>
-      <p>
-          Some of the features that we couldn't implement in this period. Open source developers are welcome to work on these.
-          <ul>
-            <li><a href="https://github.com/python-gsoc/python-blogs/issues/287">#287</a> auto add mentors in google</li>
-          </ul>
+          Python GSoC: Build a multi-user Blogging Platform with additional
+          features to manage GSoC@PSF
+        </h2>
+        <p>
+          Sounak Pradhan<br />
+          Matthew Lagoe, John ‘Warthog9’ Hawley, James Lopeman
         </p>
-      <hr />
-      <h2>Important Links</h2>
-      <p>
-        <strong>Repositories:</strong> <a href="https://github.com/python-gsoc/python-blogs">python-gsoc/python-blogs</a>,
-        <a href="https://github.com/python-gsoc/python-gsoc.github.io">python-gsoc/python-gsoc.github.io</a><br />
-        <strong>Live Sites:</strong> <a href="https://blogs.python-gsoc.org/">blogs.python-gsoc.org</a>, <a href="https://python-gsoc.org/">python-gsoc.org</a><br />
-        <strong>GSoC Blog:</strong> <a href="https://blogs.python-gsoc.org/en/sounak98s-blog/">sounak98's Blog</a><br />
-      </p>
-      <hr />
-      <h2>Merged PRs</h2>
-      <ul>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/343">#343</a> Article feed</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/342">#342</a> change color of rss feed icon</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/341">#341</a> Article feed</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/340">#340</a> Add year in feed links</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/339">#339</a> Add RSS button on blogs list and article list pages</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/338">#338</a> Minor fix</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/337">#337</a> Paginate feed</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/335">#335</a> Cache</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/334">#334</a> Cahce feed contents</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/333">#333</a> Change protocol in feed and sitemap</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/332">#332</a> Upgrade to django cms 3.7.0rc1, YES finally!</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/331">#331</a> Minor update</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/330">#330</a> Add modal when archiving pages</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/329">#329</a> Bugfix</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/326">#326</a> Add allowed styles</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/325">#325</a> Update requirements</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/324">#324</a> Add sanitizer</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/321">#321</a> Add never_cache to new_comment view</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/318">#318</a> Enhance user invite feature</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/317">#317</a> Logging</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/315">#315</a> bugfix</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/310">#310</a> Handle exception on sitemap</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/309">#309</a> Sitemap fix</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/305">#305</a> Add titles and meta tags</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/304">#304</a> Reglink notif not sent when suborg accepted</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/303">#303</a> Autocreate dir</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/302">#302</a> Upload attachment/image ckeditor</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/301">#301</a> Minor fix</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/300">#300</a> Add activation_date to SendEmail</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/299">#299</a> Send Email</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/297">#297</a> Redirect /blogs to /</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/296">#296</a> Archive old gsoc pages</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/295">#295</a> Reminder subject according to category of blog post</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/285">#285</a> Bugfix</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/282">#282</a> Add accepted blog in suborg details admin page</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/279">#279</a> Fix typo</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/278">#278</a> Fix pep8 warnings</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/273">#273</a> Bugfix</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/271">#271</a> Send notification to admin when suborg application added/updated</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/270">#270</a> Fix pep8 warnings</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/269">#269</a> Revoking student blog permissions after gsoc ends</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/259">#259</a> Fix suborg form validation condition</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/258">#258</a> Set update_site_template as custom handler</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/255">#255</a> Auto generate static site pages</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/253">#253</a> Fix url to access feed</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/251">#251</a> Fix typo</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/250">#250</a> Change builder admin</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/249">#249</a> Fix pep8 warnings</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/248">#248</a> Bugfixes</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/246">#246</a> Bugfix</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/242">#242</a> Add Suborg Application Form</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/241">#241</a> Suborg form</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/239">#239</a> Bugfixes</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/237">#237</a> Update models</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/234">#234</a> Update scope</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/233">#233</a> Decrease blog count only when article is created not updated</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/232">#232</a> Update calendar integration</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/231">#231</a> Minor changes</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/230">#230</a> Add import</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/228">#228</a> Add googleapiauth command</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/223">#223</a> Auto creates google calendar on adding events</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/222">#222</a> Update send reminder post blog logic</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/220">#220</a> Replace &gt; and &lt; with >, <</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/219">#219</a> Strip meta charset from articles</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/217">#217</a> Replace &lt;pre&gt; tag with &lt;code&gt; in articles</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/216">#216</a> Fix typo</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/215">#215</a> Fix typo</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/213">#213</a> Fix latest issues</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/207">#207</a> Add publish/unpublish article buttons</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/206">#206</a> Add mark reviewed button in articlereview admin</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/205">#205</a> Make blog url a hyperlink</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/203">#203</a> Extend fields and list_view for ArticleReviewAdmin</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/200">#200</a> Disable delete article except superusers</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/198">#198</a> Override clean function for wizard blog form</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/197">#197</a> Change blog main content field to lead_in</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/194">#194</a> Add button for reviewing blogs</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/193">#193</a> Fix runcron message display when no schedulers of current activation …</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/192">#192</a> Separate reminder mails for students and mentors</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/189">#189</a> Add timeline</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/188">#188</a> Add feature for reminding students for blog posts</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/186">#186</a> Change laparams to None</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/185">#185</a> Bugfix</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/181">#181</a> Fix number of blogs in row</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/177">#177</a> Add email field in list display of userprofile</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/176">#176</a> Add error message if link exists</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/175">#175</a> Add reminders for reglinks</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/173">#173</a> Add email field to RegLink admin; alphabetically sort blogs</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/172">#172</a> Add used/all stat to add users admin page</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/169">#169</a> Comment delete, File upload fix</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/168">#168</a> Fix debug warnings</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/166">#166</a> Bugfix</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/165">#165</a> Auto publish blogs</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/164">#164</a> Bugfix</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/162">#162</a> Change queryset for blog</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/161">#161</a> Bugfix</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/160">#160</a> Fix minor bug</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/158">#158</a> Minor change</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/157">#157</a> Add proposal confirmation</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/150">#150</a> Fix add user bug and create recaptcha site key context processor</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/146">#146</a> Add timeline and gcal integration [WIP]</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/143">#143</a> Add Comments to Articles</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/139">#139</a> Move js to separate files</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/137">#137</a> Fix prospector warnings and migrate db</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/136">#136</a> Add error message when there are no blogs present</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/134">#134</a> Add error handling if sending email fails</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/132">#132</a> Add goto blog button for students</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/125">#125</a> Add proposal link to blogs list page</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/123">#123</a> Update db file</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/122">#122</a> Add attachment plugin to ckeditor</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/120">#120</a> Add page specific notifications</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/118">#118</a> Beautify README</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/117">#117</a> Add hidden field to UserProfile model to hide users</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/113">#113</a> Add error message when logging in using wrong credentials</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/104">#104</a> All blogs</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/84">#84</a> Revamp UI</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/82">#82</a> Fix typo and minor bug</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/79">#79</a> Student blog setup</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/72">#72</a> Add admin page for Scheduler model</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/71">#71</a> Deactivation user</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/57">#57</a> Add role field to UserProfile</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/45">#45</a> Extend djangocms_text_ckeditor</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/32">#32</a> Add runcron admin management command</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/28">#28</a> Add submenu support in sidemenu</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/20">#20</a> Add util function for sending messages in IRC channel</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/18">#18</a> Add filter for migrations</li>
-        <li><a href="https://github.com/python-gsoc/python-blogs/pull/12">#12</a> Add template styling</li>          
-      </ul>
-      <hr />
-      <h2>Published Blogs</h2>
-      <ul>
-        <li><a href="https://blogs.python-gsoc.org/en/sounak98s-blog/embed-google-calendar-like-a-pro/">Embed Google Calendar like a Pro</a></li>
-        <li><a href="https://blogs.python-gsoc.org/en/sounak98s-blog/seo-101-creating-custom-sitemap-using-django/">SEO 101: Creating custom sitemap using django</a></li>
-        <li><a href="https://blogs.python-gsoc.org/en/sounak98s-blog/weekly-check-in-8/">Weekly Check-In #8</a></li>
-        <li><a href="https://blogs.python-gsoc.org/en/sounak98s-blog/we-are-almost-there-now/">We are almost there now!</a></li>
-        <li><a href="https://blogs.python-gsoc.org/en/sounak98s-blog/weekly-check-in-7-2/">Weekly Check-In #7</a></li>
-        <li><a href="https://blogs.python-gsoc.org/en/sounak98s-blog/weekly-check-in-6-1/">Weekly Check-In #6</a></li>
-        <li><a href="https://blogs.python-gsoc.org/en/sounak98s-blog/creating-reddit-styled-comment-system-with-django/">Creating Reddit Styled Comment System with Django</a></li>
-        <li><a href="https://blogs.python-gsoc.org/en/sounak98s-blog/weekly-check-in-5/">Weekly Check-In #5</a></li>
-        <li><a href="https://blogs.python-gsoc.org/en/sounak98s-blog/weekly-check-in-4-1/">Weekly Check-In #4</a></li>
-        <li><a href="https://blogs.python-gsoc.org/en/sounak98s-blog/weekly-check-in-3/">Weekly Check-In #3</a></li>
-        <li><a href="https://blogs.python-gsoc.org/en/sounak98s-blog/weekly-check-in-2-1/">Weekly Check-In #2</a></li>
-        <li><a href="https://blogs.python-gsoc.org/en/sounak98s-blog/weekly-check-in/">Weekly Check-In</a></li>
-      </ul>
-      <hr />
-      <p>
-        Contact me at
-        <a href="mailto:sounak.98@gmail.com">sounak.98@gmail.com</a> if you have
-        any queries regarding GSoC, PSF or python-blogs!
-      </p>
+        <h3 id="Abstract">Abstract</h3>
+        <blockquote>
+          <p>
+            Every year more than 100 students apply for GSoC under the umbrella
+            organization PSF. Currently there is a multi-user blogging website
+            using WordPress CMS hosted for the students to publish their weekly
+            blogs and a static landing page for reaching out to people for more
+            information about this program. This project aims to build a
+            platform which allows smooth management of the GSoC program at PSF
+            every year and also ties everyone associated with it to PSF, so that
+            their work or they themselves can help out others in future.
+          </p>
+        </blockquote>
+        <p>
+          <a
+            href="https://storage.googleapis.com/summerofcode-prod.appspot.com/gsoc/core_project/doc/5805244095660032_1554830317_proposal.pdf?Expires=1566499093&amp;GoogleAccessId=summerofcode-prod%40appspot.gserviceaccount.com&amp;Signature=eR3mDO1r5vcwzi15XfnFOFhHctwFSLKthDmOlIeh7gPUfxNY0xBtbxMmCGA%2Fy1UjiOGTX9jM2eV%2FdLaQr4PZQvHopjwd83yqKj9mnK4fPySxKEoRF9zVNA%2B1DITXfk%2Bd0DNprvB2oFPr80xwm%2Fm304fDNtFDYfX4UeAZ4HBprEsWM3K%2FjE6o1jOWS7WuelrLmL25fj5Ff6TeBu2%2BP0AwUT60YYrGODAuV5B2i05CeKsB1QiQx2TzP%2Br3vbilWmfDTUY23YRK1czDTlo8QOEvkiJLMKlFezn9TsilwXqjbDE0VX12R%2FgHVfO3lw2jr%2FULvSeVYpx%2BdHhSRKA7LeV1Yw%3D%3D"
+            target="_blank"
+            rel="noopener"
+            >Read Full Proposal</a
+          >
+        </p>
+        <hr />
+        <h3 id="Important-Links">Important Links</h3>
+        <p>
+          <strong>Repositories:</strong>
+          <a
+            href="https://github.com/python-gsoc/python-blogs"
+            target="_blank"
+            rel="noopener"
+            >python-gsoc/python-blogs</a
+          >,
+          <a
+            href="https://github.com/python-gsoc/python-gsoc.github.io"
+            target="_blank"
+            rel="noopener"
+            >python-gsoc/python-gsoc.github.io</a
+          ><br />
+          <strong>Live Sites:</strong>
+          <a href="https://blogs.python-gsoc.org" target="_blank" rel="noopener"
+            >python-blogs</a
+          >,
+          <a href="https://python-gsoc.org" target="_blank" rel="noopener"
+            >python-blogs-static</a
+          ><br />
+          <strong>GSoC Blog:</strong>
+          <a
+            href="https://blogs.python-gsoc.org/en/sounak98s-blog/"
+            target="_blank"
+            rel="noopener"
+            >sounak98’s Blog</a
+          >
+        </p>
+        <hr />
+        <h2 id="Summer-Rewind">Summer Rewind</h2>
+        <p>
+          Let’s rewind to the beginning of this year. We had started working on
+          this application way before GSoC had even started. The goal was to
+          have a working application which PSF will be able to use for this
+          year’s GSoC for the management of their students. In this way, we will
+          be able to make sure that students actually use it and we get a clear
+          idea if the application is serving its purpose. I’m glad the plan
+          worked out, because tons of bugs were reported and we could fix them.
+          We also received valuable feedback from all users.
+        </p>
+        <h3 id="Schedulers-and-Builders">Schedulers and Builders</h3>
+        <p>
+          Allow me to introduce you to some of the most important modules of our
+          system. Without any doubt the first on the list is our
+          <code>Scheduler</code>, which can perform particular tasks from
+          sending an email to archiving webpages. Well, the most powerful
+          feature of this module is that it can perform those tasks at any
+          particular date and time. Need to remind students that they have not
+          written a blog on time? Not a big deal, <code>Scheduler</code> can do
+          that for you. Now think of this, many students who are not like me
+          publish their blogs on time, so we don’t really need to spam them with
+          emails. Thus we built the module <code>Builder</code> which in turn
+          builds <code>Scheduler</code> on different conditions.
+        </p>
+        <h3 id="Blogging-Platform">Blogging Platform</h3>
+        <p>
+          We didn’t have to create a blogging platform as we integrated
+          <a
+            href="https://github.com/divio/aldryn-newsblog"
+            target="_blank"
+            rel="noopener"
+            ><code>aldryn-newsblog</code></a
+          >
+          but we had to tweak it a lot to fit into our system. Something that we
+          had to work on was setting up custom permissions for each user so that
+          they only have access to their blogs. We achieved this with the help
+          of django admin which allows us to set add, view, change permissions
+          based on querysets! Sanitizing the artilce contents was another
+          challenge that we faced because aldryn-newsblog uses an editor which
+          injects <code>HTML</code> so that users can customize their blog
+          posts. Our system currently allows only particular tags like
+          <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>, etc. Other tags are
+          sanitized conditionally, like for iframes we only render iframes for
+          YouTube videos so that users can add YouTube videos to their articles.
+        </p>
+        <p>
+          We also tweaked the article list templates to include our own
+          reddit-styled comment system which makes use of recursion on django
+          templates to display different threads. For more information on how to
+          achieve this, check out the article
+          <a
+            href="https://blogs.python-gsoc.org/en/sounak98s-blog/creating-reddit-styled-comment-system-with-django/"
+            target="_blank"
+            rel="noopener"
+            >Creating Reddit Styled Comment System with Django </a
+          >.
+        </p>
+        <h3 id="Tweaking-Django">Tweaking Django</h3>
+        <p>
+          We used <code>django-forms</code> wherever we could, but there were
+          cases where we needed to customize the forms to an extent which wasn’t
+          supported out of the box. We have a form which lets suborg admins and
+          admins add selected students to the system. Generally, this includes
+          adding a lot of students (~50). Typing out the emails one by one is
+          still okay, but selecting the GSoC year or the Suborg one by one for
+          each student? Ask my mentor, and he will let you know what a pain it
+          is. So, we tweaked the django form to add buttons which would let the
+          admin select a particular Suborg, year for all the mentioned users.
+        </p>
+        <p>
+          <img
+            src="https://i.imgur.com/WUEPwDG.gif"
+            alt="set-default-fields-gsoc19.gif"
+          />
+        </p>
+        <p>
+          We have RSS feeds for each blog separately (all the articles published
+          by a student) and also for all the articles published on this
+          platform. Django has
+          <a
+            href="https://docs.djangoproject.com/en/2.2/ref/contrib/syndication/"
+            target="_blank"
+            rel="noopener"
+            >Syndication Feed Framework</a
+          >
+          which allows customizable RSS feeds, but the all articles feed was too
+          long and took seconds to load. We needed to paginate the feed, and we
+          were out of luck as django didn’t support this out of the box. This
+          was a challenge, as we had to take in the request object and parse the
+          url to get the page number and render the blogs accordingly. We also
+          added the year argument which takes in the year and displays the blogs
+          of that particular GSoC. The current feed url looks something like
+          this
+          <a
+            href="https://blogs.python-gsoc.org/en/feed/?y=2019&amp;p=2"
+            target="_blank"
+            rel="noopener"
+            >https://blogs.python-gsoc.org/en/feed/?y=2019&amp;p=2</a
+          >.
+        </p>
+        <p>
+          For most of the other admin features, we heavily relied upon django
+          admin. The admin portal lets admins
+        </p>
+        <ul>
+          <li>Add new <code>Scheduler</code>s and <code>Builder</code>s</li>
+          <li>
+            Check blog post histories of different articles to track changes
+          </li>
+          <li>
+            Add the current GSoC timeline which gets pushed to the schedule page
+            in the github site repository
+          </li>
+          <li>Send custom emails to users as admins</li>
+          <li>Review comments and delete them if necessary</li>
+          <li>Disable a user profile if the student fails mid-way</li>
+        </ul>
+        <h3 id="Integration-with-Github">Integration with Github</h3>
+        <p>
+          We annotated some of the manual work that an admin has to put in to
+          maintain the static site on Github. Our system creates pull requests
+          adding new Suborgs in the Ideas page whenever a new Suborg Application
+          is added, it also archives current pages when the GSoC program ends.
+          These pulls can then be reviewed and merged to master by the admin.
+        </p>
+        <h3 id="Fixing-Bugs">Fixing Bugs</h3>
+        <p>
+          This was really a major part of the whole summer and it went hand in
+          hand with the whole developmene process. There were bugs that were
+          found by the users, and the others figured out by the mentors and me.
+          There are a ton of “Bugfix” PRs which were basically bug fixes.
+        </p>
+        <p>
+          There was a time when we pushed some changes and it made the system
+          send emails to all the users regardless of whether they have blogged
+          or not. Yes, basically we spammed a lot of users unintentionally. This
+          was another challenge that we had faced and overcame eventually by
+          making a flag which would disable all notifications to any user. We
+          also followed a strict push cycle to avoid any disturbance to students
+          blogging at the end of the week.
+        </p>
+        <h3 id="Wrapping-Up">Wrapping Up</h3>
+        <p>
+          We ran accessibility tests on our websites and fixed issues which
+          decrease the accessibility of the website, like fixing contrast ratios
+          of texts and background, adding alts to images, etc. We also worked on
+          boosting the loading speed of out website on mobiles. In built tools
+          provided by Chrome and Firefox gave us a list of issues after
+          analyzing the website which we could work on.
+        </p>
+        <p>
+          We also ended up using a cache server to cache the data to fasten up
+          the whole loading process. We also needed to manually override caching
+          in some pages like the comments page, which would not show the new
+          comment as the old one was cached. This is the
+          <a
+            href="https://github.com/python-gsoc/python-blogs/issues/293"
+            target="_blank"
+            rel="noopener"
+            >issue</a
+          >
+          which describes more about this bug and how we solved it.
+        </p>
+        <hr />
+        <h2 id="Future-Plans">Future Plans</h2>
+        <p>
+          Currently, the platform provides most of the functionality required
+          for a smooth GSoC run at PSF, but there are features that would make
+          it even smoother for the admins and make their lives a bit less
+          painful. One of them is adding the mentors to the
+          <a
+            href="https://summerofcode.withgoogle.com/"
+            target="_blank"
+            rel="noopener"
+            >GSoC site</a
+          >
+          automatically from the system’s database. This can be another nasty
+          manual work (typing in the emails, names, etc. one by one) and needs
+          to be done automatically. For more details, check this
+          <a
+            href="https://github.com/python-gsoc/python-blogs/issues/287"
+            target="_blank"
+            rel="noopener"
+            >issue</a
+          >
+          out.
+        </p>
+        <p>
+          We also need to write unit and integration tests for features that are
+          not provided by django or any third-party packages.
+        </p>
+        <p>
+          I would love to work on these in future even when this GSoC ends, fix
+          more bugs as and when they come up and be a part of this great
+          community!
+        </p>
+        <hr />
+        <h2 id="Credits">Credits</h2>
+        <p>
+          First of all, any of this would not have been possible without my
+          mentors and other members of the PSF community. So a huge shout-out to
+          them for helping me whenever I needed and for guiding me when I was
+          clueless on how to proceed. While I was busy coding, my mentor would
+          look for potential bugs in the system and point them out to me. This
+          really kept me busy throughout the summer as I always had bugs to fix,
+          and helped me make the system more stable.
+        </p>
+        <p>
+          Next, I would thank Google for organising such an amazing program for
+          students who are passionate about coding and giving them an
+          opportunity to gain some hands-on experience.
+        </p>
+        <p>
+          Last but not the least, I would thank my fellow applicants who also
+          worked on building the application with me to bring it to a stage
+          where it could be used in this year’s GSoC run.
+        </p>
+        <hr />
+        <h2 id="Apologies">Apologies</h2>
+        <p>
+          There are a lot of mistakes that I made and learnt from them. In the
+          beginning I was not testing stuff through before making a PR,
+          sometimes trying to do things faster and the other times just being
+          lazy. It only made me spend more time on a particular feature as there
+          were things that would not work.
+        </p>
+        <p>
+          Another thing that I should apologize for is being very irregular
+          about posting blogs. This shouldn’t have come from me, as I was the
+          student working on the very blogging platform itself.
+        </p>
+        <hr />
+        <h2 id="List-of-merged-PRs">List of merged PRs</h2>
+        <p>
+          Here is a list of all the PRs made by me which got merged during the
+          application process and the summer.
+        </p>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/343"
+              target="_blank"
+              rel="noopener"
+              >#343</a
+            >
+            Article feed
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/342"
+              target="_blank"
+              rel="noopener"
+              >#342</a
+            >
+            change color of rss feed icon
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/341"
+              target="_blank"
+              rel="noopener"
+              >#341</a
+            >
+            Article feed
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/340"
+              target="_blank"
+              rel="noopener"
+              >#340</a
+            >
+            Add year in feed links
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/339"
+              target="_blank"
+              rel="noopener"
+              >#339</a
+            >
+            Add RSS button on blogs list and article list pages
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/338"
+              target="_blank"
+              rel="noopener"
+              >#338</a
+            >
+            Minor fix
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/337"
+              target="_blank"
+              rel="noopener"
+              >#337</a
+            >
+            Paginate feed
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/335"
+              target="_blank"
+              rel="noopener"
+              >#335</a
+            >
+            Cache
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/334"
+              target="_blank"
+              rel="noopener"
+              >#334</a
+            >
+            Cahce feed contents
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/333"
+              target="_blank"
+              rel="noopener"
+              >#333</a
+            >
+            Change protocol in feed and sitemap
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/332"
+              target="_blank"
+              rel="noopener"
+              >#332</a
+            >
+            Upgrade to django cms 3.7.0rc1, YES finally!
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/331"
+              target="_blank"
+              rel="noopener"
+              >#331</a
+            >
+            Minor update
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/330"
+              target="_blank"
+              rel="noopener"
+              >#330</a
+            >
+            Add modal when archiving pages
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/329"
+              target="_blank"
+              rel="noopener"
+              >#329</a
+            >
+            Bugfix
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/326"
+              target="_blank"
+              rel="noopener"
+              >#326</a
+            >
+            Add allowed styles
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/325"
+              target="_blank"
+              rel="noopener"
+              >#325</a
+            >
+            Update requirements
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/324"
+              target="_blank"
+              rel="noopener"
+              >#324</a
+            >
+            Add sanitizer
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/321"
+              target="_blank"
+              rel="noopener"
+              >#321</a
+            >
+            Add never_cache to new_comment view
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/318"
+              target="_blank"
+              rel="noopener"
+              >#318</a
+            >
+            Enhance user invite feature
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/317"
+              target="_blank"
+              rel="noopener"
+              >#317</a
+            >
+            Logging
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/315"
+              target="_blank"
+              rel="noopener"
+              >#315</a
+            >
+            bugfix
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/310"
+              target="_blank"
+              rel="noopener"
+              >#310</a
+            >
+            Handle exception on sitemap
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/309"
+              target="_blank"
+              rel="noopener"
+              >#309</a
+            >
+            Sitemap fix
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/305"
+              target="_blank"
+              rel="noopener"
+              >#305</a
+            >
+            Add titles and meta tags
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/304"
+              target="_blank"
+              rel="noopener"
+              >#304</a
+            >
+            Reglink notif not sent when suborg accepted
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/303"
+              target="_blank"
+              rel="noopener"
+              >#303</a
+            >
+            Autocreate dir
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/302"
+              target="_blank"
+              rel="noopener"
+              >#302</a
+            >
+            Upload attachment/image ckeditor
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/301"
+              target="_blank"
+              rel="noopener"
+              >#301</a
+            >
+            Minor fix
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/300"
+              target="_blank"
+              rel="noopener"
+              >#300</a
+            >
+            Add activation_date to SendEmail
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/299"
+              target="_blank"
+              rel="noopener"
+              >#299</a
+            >
+            Send Email
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/297"
+              target="_blank"
+              rel="noopener"
+              >#297</a
+            >
+            Redirect /blogs to /
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/296"
+              target="_blank"
+              rel="noopener"
+              >#296</a
+            >
+            Archive old gsoc pages
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/295"
+              target="_blank"
+              rel="noopener"
+              >#295</a
+            >
+            Reminder subject according to category of blog post
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/285"
+              target="_blank"
+              rel="noopener"
+              >#285</a
+            >
+            Bugfix
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/282"
+              target="_blank"
+              rel="noopener"
+              >#282</a
+            >
+            Add accepted blog in suborg details admin page
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/279"
+              target="_blank"
+              rel="noopener"
+              >#279</a
+            >
+            Fix typo
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/278"
+              target="_blank"
+              rel="noopener"
+              >#278</a
+            >
+            Fix pep8 warnings
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/273"
+              target="_blank"
+              rel="noopener"
+              >#273</a
+            >
+            Bugfix
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/271"
+              target="_blank"
+              rel="noopener"
+              >#271</a
+            >
+            Send notification to admin when suborg application added/updated
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/270"
+              target="_blank"
+              rel="noopener"
+              >#270</a
+            >
+            Fix pep8 warnings
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/269"
+              target="_blank"
+              rel="noopener"
+              >#269</a
+            >
+            Revoking student blog permissions after gsoc ends
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/259"
+              target="_blank"
+              rel="noopener"
+              >#259</a
+            >
+            Fix suborg form validation condition
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/258"
+              target="_blank"
+              rel="noopener"
+              >#258</a
+            >
+            Set update_site_template as custom handler
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/255"
+              target="_blank"
+              rel="noopener"
+              >#255</a
+            >
+            Auto generate static site pages
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/253"
+              target="_blank"
+              rel="noopener"
+              >#253</a
+            >
+            Fix url to access feed
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/251"
+              target="_blank"
+              rel="noopener"
+              >#251</a
+            >
+            Fix typo
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/250"
+              target="_blank"
+              rel="noopener"
+              >#250</a
+            >
+            Change builder admin
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/249"
+              target="_blank"
+              rel="noopener"
+              >#249</a
+            >
+            Fix pep8 warnings
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/248"
+              target="_blank"
+              rel="noopener"
+              >#248</a
+            >
+            Bugfixes
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/246"
+              target="_blank"
+              rel="noopener"
+              >#246</a
+            >
+            Bugfix
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/242"
+              target="_blank"
+              rel="noopener"
+              >#242</a
+            >
+            Add Suborg Application Form
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/241"
+              target="_blank"
+              rel="noopener"
+              >#241</a
+            >
+            Suborg form
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/239"
+              target="_blank"
+              rel="noopener"
+              >#239</a
+            >
+            Bugfixes
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/237"
+              target="_blank"
+              rel="noopener"
+              >#237</a
+            >
+            Update models
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/234"
+              target="_blank"
+              rel="noopener"
+              >#234</a
+            >
+            Update scope
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/233"
+              target="_blank"
+              rel="noopener"
+              >#233</a
+            >
+            Decrease blog count only when article is created not updated
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/232"
+              target="_blank"
+              rel="noopener"
+              >#232</a
+            >
+            Update calendar integration
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/231"
+              target="_blank"
+              rel="noopener"
+              >#231</a
+            >
+            Minor changes
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/230"
+              target="_blank"
+              rel="noopener"
+              >#230</a
+            >
+            Add import
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/228"
+              target="_blank"
+              rel="noopener"
+              >#228</a
+            >
+            Add googleapiauth command
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/223"
+              target="_blank"
+              rel="noopener"
+              >#223</a
+            >
+            Auto creates google calendar on adding events
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/222"
+              target="_blank"
+              rel="noopener"
+              >#222</a
+            >
+            Update send reminder post blog logic
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/220"
+              target="_blank"
+              rel="noopener"
+              >#220</a
+            >
+            Replace &gt; and &lt; with &gt;, &lt;
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/219"
+              target="_blank"
+              rel="noopener"
+              >#219</a
+            >
+            Strip meta charset from articles
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/217"
+              target="_blank"
+              rel="noopener"
+              >#217</a
+            >
+            Replace &lt;pre&gt; tag with &gt;code&lt; in articles
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/216"
+              target="_blank"
+              rel="noopener"
+              >#216</a
+            >
+            Fix typo
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/215"
+              target="_blank"
+              rel="noopener"
+              >#215</a
+            >
+            Fix typo
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/213"
+              target="_blank"
+              rel="noopener"
+              >#213</a
+            >
+            Fix latest issues
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/207"
+              target="_blank"
+              rel="noopener"
+              >#207</a
+            >
+            Add publish/unpublish article buttons
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/206"
+              target="_blank"
+              rel="noopener"
+              >#206</a
+            >
+            Add mark reviewed button in articlereview admin
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/205"
+              target="_blank"
+              rel="noopener"
+              >#205</a
+            >
+            Make blog url a hyperlink
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/203"
+              target="_blank"
+              rel="noopener"
+              >#203</a
+            >
+            Extend fields and list_view for ArticleReviewAdmin
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/200"
+              target="_blank"
+              rel="noopener"
+              >#200</a
+            >
+            Disable delete article except superusers
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/198"
+              target="_blank"
+              rel="noopener"
+              >#198</a
+            >
+            Override clean function for wizard blog form
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/197"
+              target="_blank"
+              rel="noopener"
+              >#197</a
+            >
+            Change blog main content field to lead_in
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/194"
+              target="_blank"
+              rel="noopener"
+              >#194</a
+            >
+            Add button for reviewing blogs
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/193"
+              target="_blank"
+              rel="noopener"
+              >#193</a
+            >
+            Fix runcron message display when no schedulers of current activation
+            …
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/192"
+              target="_blank"
+              rel="noopener"
+              >#192</a
+            >
+            Separate reminder mails for students and mentors
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/189"
+              target="_blank"
+              rel="noopener"
+              >#189</a
+            >
+            Add timeline
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/188"
+              target="_blank"
+              rel="noopener"
+              >#188</a
+            >
+            Add feature for reminding students for blog posts
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/186"
+              target="_blank"
+              rel="noopener"
+              >#186</a
+            >
+            Change laparams to None
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/185"
+              target="_blank"
+              rel="noopener"
+              >#185</a
+            >
+            Bugfix
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/181"
+              target="_blank"
+              rel="noopener"
+              >#181</a
+            >
+            Fix number of blogs in row
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/177"
+              target="_blank"
+              rel="noopener"
+              >#177</a
+            >
+            Add email field in list display of userprofile
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/176"
+              target="_blank"
+              rel="noopener"
+              >#176</a
+            >
+            Add error message if link exists
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/175"
+              target="_blank"
+              rel="noopener"
+              >#175</a
+            >
+            Add reminders for reglinks
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/173"
+              target="_blank"
+              rel="noopener"
+              >#173</a
+            >
+            Add email field to RegLink admin; alphabetically sort blogs
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/172"
+              target="_blank"
+              rel="noopener"
+              >#172</a
+            >
+            Add used/all stat to add users admin page
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/169"
+              target="_blank"
+              rel="noopener"
+              >#169</a
+            >
+            Comment delete, File upload fix
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/168"
+              target="_blank"
+              rel="noopener"
+              >#168</a
+            >
+            Fix debug warnings
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/166"
+              target="_blank"
+              rel="noopener"
+              >#166</a
+            >
+            Bugfix
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/165"
+              target="_blank"
+              rel="noopener"
+              >#165</a
+            >
+            Auto publish blogs
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/164"
+              target="_blank"
+              rel="noopener"
+              >#164</a
+            >
+            Bugfix
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/162"
+              target="_blank"
+              rel="noopener"
+              >#162</a
+            >
+            Change queryset for blog
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/161"
+              target="_blank"
+              rel="noopener"
+              >#161</a
+            >
+            Bugfix
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/160"
+              target="_blank"
+              rel="noopener"
+              >#160</a
+            >
+            Fix minor bug
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/158"
+              target="_blank"
+              rel="noopener"
+              >#158</a
+            >
+            Minor change
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/157"
+              target="_blank"
+              rel="noopener"
+              >#157</a
+            >
+            Add proposal confirmation
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/150"
+              target="_blank"
+              rel="noopener"
+              >#150</a
+            >
+            Fix add user bug and create recaptcha site key context processor
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/146"
+              target="_blank"
+              rel="noopener"
+              >#146</a
+            >
+            Add timeline and gcal integration [WIP]
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/143"
+              target="_blank"
+              rel="noopener"
+              >#143</a
+            >
+            Add Comments to Articles
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/139"
+              target="_blank"
+              rel="noopener"
+              >#139</a
+            >
+            Move js to separate files
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/137"
+              target="_blank"
+              rel="noopener"
+              >#137</a
+            >
+            Fix prospector warnings and migrate db
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/136"
+              target="_blank"
+              rel="noopener"
+              >#136</a
+            >
+            Add error message when there are no blogs present
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/134"
+              target="_blank"
+              rel="noopener"
+              >#134</a
+            >
+            Add error handling if sending email fails
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/132"
+              target="_blank"
+              rel="noopener"
+              >#132</a
+            >
+            Add goto blog button for students
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/125"
+              target="_blank"
+              rel="noopener"
+              >#125</a
+            >
+            Add proposal link to blogs list page
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/123"
+              target="_blank"
+              rel="noopener"
+              >#123</a
+            >
+            Update db file
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/122"
+              target="_blank"
+              rel="noopener"
+              >#122</a
+            >
+            Add attachment plugin to ckeditor
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/120"
+              target="_blank"
+              rel="noopener"
+              >#120</a
+            >
+            Add page specific notifications
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/118"
+              target="_blank"
+              rel="noopener"
+              >#118</a
+            >
+            Beautify README
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/117"
+              target="_blank"
+              rel="noopener"
+              >#117</a
+            >
+            Add hidden field to UserProfile model to hide users
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/113"
+              target="_blank"
+              rel="noopener"
+              >#113</a
+            >
+            Add error message when logging in using wrong credentials
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/104"
+              target="_blank"
+              rel="noopener"
+              >#104</a
+            >
+            All blogs
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/84"
+              target="_blank"
+              rel="noopener"
+              >#84</a
+            >
+            Revamp UI
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/82"
+              target="_blank"
+              rel="noopener"
+              >#82</a
+            >
+            Fix typo and minor bug
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/79"
+              target="_blank"
+              rel="noopener"
+              >#79</a
+            >
+            Student blog setup
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/72"
+              target="_blank"
+              rel="noopener"
+              >#72</a
+            >
+            Add admin page for Scheduler model
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/71"
+              target="_blank"
+              rel="noopener"
+              >#71</a
+            >
+            Deactivation user
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/57"
+              target="_blank"
+              rel="noopener"
+              >#57</a
+            >
+            Add role field to UserProfile
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/45"
+              target="_blank"
+              rel="noopener"
+              >#45</a
+            >
+            Extend djangocms_text_ckeditor
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/32"
+              target="_blank"
+              rel="noopener"
+              >#32</a
+            >
+            Add runcron admin management command
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/28"
+              target="_blank"
+              rel="noopener"
+              >#28</a
+            >
+            Add submenu support in sidemenu
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/20"
+              target="_blank"
+              rel="noopener"
+              >#20</a
+            >
+            Add util function for sending messages in IRC channel
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/18"
+              target="_blank"
+              rel="noopener"
+              >#18</a
+            >
+            Add filter for migrations
+          </li>
+          <li>
+            <a
+              href="https://github.com/python-gsoc/python-blogs/pull/12"
+              target="_blank"
+              rel="noopener"
+              >#12</a
+            >
+            Add template styling
+          </li>
+        </ul>
+        <hr />
+        <p>
+          Contact me at
+          <a href="mailto:sounak.98@gmail.com" target="_blank" rel="noopener"
+            >sounak.98@gmail.com</a
+          >
+          if you have any queries regarding GSoC, PSF or python-blogs!
+        </p>
+      </div>
     </div>
   </body>
 </html>

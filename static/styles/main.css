@@ -14,3 +14,7 @@ html {
 .size-2 {
     font-size: 18px;
 }
+
+img {
+    width: 100%;
+}
